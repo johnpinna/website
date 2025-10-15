@@ -47,18 +47,22 @@
   </style>
 </head>
 
-<body class="bg-background-light dark:bg-background-dark font-display text-text-main dark:text-gray-200">
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
   <div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
     <div>
       <!-- HEADER -->
-     <header class="flex items-center p-4 pb-2 justify-between">
-  <h1 class="text-3xl @[480px]:text-4xl font-extrabold tracking-tight text-primary dark:text-primary flex-1 text-center pl-12">
-    Ingegnere Architetto Giovanni Pinna
-  </h1>
-  <div class="flex w-12 items-center justify-end">
-    <button id="langToggle" class="...">EN</button>
-  </div>
-</header>
+      <header class="flex items-center p-4 pb-2 justify-between">
+        <h2 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white flex-1 text-center pl-12">
+          Ingegner Architetto Giovanni Pinna
+        </h2>
+
+        <!-- Pulsante lingua -->
+        <div class="flex w-12 items-center justify-end">
+          <button id="langToggle" class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-transparent text-gray-900 dark:text-white hover:bg-primary/10 dark:hover:bg-primary/20 text-sm font-semibold">
+            EN
+          </button>
+        </div>
+      </header>
 
 
       <!-- HERO -->
@@ -159,6 +163,7 @@
   </script>
 </body>
 </html>
+
 
 
 
