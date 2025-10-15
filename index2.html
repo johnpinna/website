@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ingegnere Architetto Giovanni Pinna</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" onload="this.rel='stylesheet'" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#A50000",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+            "text-main": "#333333",
+            "text-secondary": "#666666",
+            "border": "#CCCCCC",
+            "hover": "#C00000"
+          },
+          fontFamily: {
+            display: ["Work Sans"],
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px",
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    .gradient-overlay {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
+    }
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-main dark:text-gray-200">
+  <div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+    <div>
+      <!-- HEADER -->
+      <header class="flex items-center p-4 pb-2 justify-between">
+        <h1 class="text-3xl @[480px]:text-4xl font-extrabold tracking-tight text-primary dark:text-primary flex-1 text-center pl-12">
+          Ingegnere Architetto Giovanni Pinna
+        </h2>
+        <div class="flex w-12 items-center justify-end">
+          <button id="langToggle" class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-primary text-white hover:bg-hover text-sm font-semibold">
+            EN
+          </button>
+        </div>
+      </header>
+
+      <!-- HERO -->
+      <main>
+        <div class="@container p-4">
+          <div class="relative flex min-h-[480px] flex-col gap-6 items-start justify-end rounded-lg bg-cover bg-center bg-no-repeat p-6 @[480px]:p-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWZTSu6e2Vm1804SEor9Q2CuxlPLI1fWpNEp6h0XWcxVUEg53G8QV-D0baFZIFWviBP1JdsnlYcWECdQ7-B3B9PAND_gIreIo79kJvYrEDPGSMXWDJbDu2DNne8RCTvI17JkCiPe89YARXkGp8DCD75upTnf-pwkzxQe3xY1RUHOn7ldJMZoKTEZybaujz5NY_dFlx50d-lIgUV484-uXV_0KlbGqgnQiS9y5f2iz2jxR67dEfJOSqhmS5hSzRyL7S5SNyTyJxab8");'>
+            <div class="absolute inset-0 rounded-lg gradient-overlay"></div>
+            <div class="relative z-10 flex flex-col gap-4 text-left">
+              <h1 class="text-white text-4xl font-black leading-tight tracking-tight @[480px]:text-5xl">
+                Progettiamo spazi, costruiamo futuro
+              </h1>
+              <p class="text-white text-base font-normal leading-normal max-w-xl @[480px]:text-lg">
+                Studio multidisciplinare di architettura e ingegneria specializzato in progettazione, design d’interni e consulenze tecniche per tribunali e privati.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SERVIZI -->
+        <section class="flex flex-col gap-10 px-4 py-10 @container">
+          <div class="flex flex-col gap-4 max-w-3xl mx-auto text-center">
+            <h1 class="text-primary dark:text-white text-3xl font-bold tracking-tight @[480px]:text-4xl">I nostri servizi</h1>
+            <p class="text-text-secondary dark:text-gray-300 text-base font-normal leading-normal">
+              Offriamo un’ampia gamma di servizi per soddisfare le esigenze di privati, aziende e pubbliche amministrazioni.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 @[480px]:grid-cols-2 gap-4">
+            <!-- Architettura -->
+            <div class="flex flex-col gap-3 rounded-lg border border-border dark:border-gray-700 bg-background-light dark:bg-background-dark p-6">
+              <div class="text-primary">
+                <svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px" xmlns="http://www.w3.org/2000/svg"><path d="M218.83 103.77l-80-75.48a1.14 1.14 0 0 1-.11-.11a16 16 0 0 0-21.53 0l-.11.11L37.17 103.77A16 16 0 0 0 32 115.55V208a16 16 0 0 0 16 16h48a16 16 0 0 0 16-16v-48h32v48a16 16 0 0 0 16 16h48a16 16 0 0 0 16-16V115.55a16 16 0 0 0-4.83-11.78Z"></path></svg>
+              </div>
+              <h2 class="text-text-main dark:text-white text-lg font-bold leading-tight">Architettura</h2>
+              <p class="text-text-secondary dark:text-gray-400 text-sm leading-normal">
+                Dalla concezione al dettaglio costruttivo, progettiamo spazi funzionali ed esteticamente coerenti.
+              </p>
+            </div>
+
+            <!-- Ingegneria -->
+            <div class="flex flex-col gap-3 rounded-lg border border-border dark:border-gray-700 bg-background-light dark:bg-background-dark p-6">
+              <div class="text-primary">
+                <svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px" xmlns="http://www.w3.org/2000/svg"><path d="M235.32 73.37L182.63 20.69a16 16 0 0 0-22.63 0L20.68 160a16 16 0 0 0 0 22.63l52.69 52.68a16 16 0 0 0 22.63 0L235.32 96a16 16 0 0 0 0-22.63Z"></path></svg>
+              </div>
+              <h2 class="text-text-main dark:text-white text-lg font-bold leading-tight">Ingegneria</h2>
+              <p class="text-text-secondary dark:text-gray-400 text-sm leading-normal">
+                Soluzioni strutturali innovative, sostenibili e integrate con l’architettura.
+              </p>
+            </div>
+
+            <!-- Interior Design -->
+            <div class="flex flex-col gap-3 rounded-lg border border-border dark:border-gray-700 bg-background-light dark:bg-background-dark p-6">
+              <div class="text-primary">
+                <svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px" xmlns="http://www.w3.org/2000/svg"><path d="M232 32a8 8 0 0 0-8-8c-44.08 0-89.31 49.71-114.43 82.63A60 60 0 0 0 32 164c0 30.88-19.54 44.73-20.47 45.37A8 8 0 0 0 16 224h76a60 60 0 0 0 57.37-77.57C182.3 121.31 232 76.08 232 32Z"></path></svg>
+              </div>
+              <h2 class="text-text-main dark:text-white text-lg font-bold leading-tight">Interior Design</h2>
+              <p class="text-text-secondary dark:text-gray-400 text-sm leading-normal">
+                Creiamo interni armoniosi, eleganti e personalizzati sulle esigenze del cliente.
+              </p>
+            </div>
+
+            <!-- Consulenze Tecniche -->
+            <div class="flex flex-col gap-3 rounded-lg border border-border dark:border-gray-700 bg-background-light dark:bg-background-dark p-6">
+              <div class="text-primary">
+                <svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px" xmlns="http://www.w3.org/2000/svg"><path d="M243.32 116.69l-16-16a16 16 0 0 0-20.84-1.53L156.84 49.52a16 16 0 0 0-1.52-20.84l-16-16a16 16 0 0 0-22.63 0l-64 64a16 16 0 0 0 0 22.63l16 16a16 16 0 0 0 20.83 1.52l7.17-7.17 7.17-7.17L31.31 189.38A25 25 0 0 0 66.63 224.7L132 159.32l7.17 7.16a16 16 0 0 0 1.52 20.84l16 16a16 16 0 0 0 22.63 0l64-64a16 16 0 0 0 0-22.62Z"></path></svg>
+              </div>
+              <h2 class="text-text-main dark:text-white text-lg font-bold leading-tight">Consulenze Tecniche per Tribunali e Privati</h2>
+              <p class="text-text-secondary dark:text-gray-400 text-sm leading-normal">
+                Esperienza consolidata in perizie, stime e attività di consulenza tecnica di parte (CTP) e d’ufficio (CTU).
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTATTI -->
+        <section class="py-16 px-4 @container">
+          <div class="flex flex-col justify-end gap-6 text-center max-w-3xl mx-auto">
+            <h1 class="text-text-main dark:text-white text-3xl font-bold tracking-tight @[480px]:text-4xl">Contatti</h1>
+            <p class="text-text-secondary dark:text-gray-300 text-base font-normal leading-normal">Cagliari · Olbia · Milano</p>
+            <p class="text-primary text-lg font-semibold">+39 333 577 7357</p>
+          </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="flex flex-col gap-6 px-5 py-10 text-center bg-background-light dark:bg-background-dark border-t border-border dark:border-gray-800">
+          <p class="text-text-secondary dark:text-gray-400 text-sm">
+            © 2025 Ingegnere Architetto Giovanni Pinna · Cagliari · Olbia · Milano · Tel. +39 333 577 7357
+          </p>
+        </footer>
+
+    
+
+  <!-- Script lingua segnaposto -->
+  <script>
+    document.getElementById('langToggle').addEventListener('click', function() {
+      alert("Versione inglese in arrivo!");
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
